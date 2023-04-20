@@ -20,7 +20,7 @@ public class UserDaoJDBCImpl implements UserDao {
             Statement statement = connection.createStatement();
             statement.executeUpdate("CREATE TABLE IF NOT EXISTS users (id BIGINT NOT NULL AUTO_INCREMENT, name VARCHAR(255) NOT NULL,  lastname VARCHAR(255) NOT NULL,  age INT(3) NOT NULL, PRIMARY KEY (ID) )");
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 
