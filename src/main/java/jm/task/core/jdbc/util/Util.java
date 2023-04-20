@@ -30,6 +30,7 @@ public class Util {
         return connection;
     }
 
+
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
